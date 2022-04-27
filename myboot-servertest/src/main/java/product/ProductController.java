@@ -12,8 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ProductController {
 	@Autowired
 	@Qualifier("productservice")
-	ProductService service;
-	/* public ProductService service; */
+	public ProductService service;
 	
 	@RequestMapping("/productlist")
 	public ModelAndView productlist() {
